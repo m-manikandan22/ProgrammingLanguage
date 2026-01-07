@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="navbar">
+        <h1>Bookstra</h1>
+    </div>
+
+    <div class="container">
+        <div class="book-container">
+            <h2>Rich dad Poor Dad</h2>
+            <h5>Robort</h5>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero ipsam asperiores voluptatibus quibusdam eveniet sapiente illum dolor saepe neque tenetur aspernatur temporibus nam aut earum, adipisci voluptatem, minus harum facilis.</p>
+            <button onclick="deletebook(event)">Delete</button>
+        </div>
+    </div>
+    <div class="popup-overlay"></div>
+    <div class="popup-box">
+        <h2>Add Book</h2>
+        <form>
+            <input type="text" placeholder="Book Title" id="book-title-input">
+            <input type="text" placeholder="Book Author" id="book-author-input">
+            <textarea placeholder="Short Discription" id="book-description-input" ></textarea>
+            <button id="add-book">Add</button>
+            <button id="cancel-popup">cancel</button>
+        </form>
+    </div>
+    <button class="add-button" id="add-popup-button">+</button>
+</body>
+
+<script src="scripts.js"></script>
+</html>
